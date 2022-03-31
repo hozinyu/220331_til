@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    input {
+      border: 2px solid skyblue;
+    }
+    input:required {
+      border-color: tomato;
+    }
+    input[placeholder~="name"] {
+      background-color: pink;
+    }
+    input[type="password"] {
+      background-color: black;
+    }
+    input[placeholder$="hozin"] {
+      background-color: aquamarine;
+    }
+  </style>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder=" first name" />
+        <input type="text" placeholder="last" />
+        <input type="text" placeholder="middle" />
+        <input type="password" required placeholder="=password" />
+        <input type="text" placeholder="second name" />
+        <input type="text" placeholder=" awesome hozin" />
+      </form>
+    </div>
+  </body>
+</html>
