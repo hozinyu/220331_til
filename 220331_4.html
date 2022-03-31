@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      border: 3px solid black;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    form:hover {
+      background-color: teal;
+    }
+    form:focus-within {
+      background-color: saddlebrown;
+    }
+    input {
+      border: 2px solid tomato;
+    }
+    input:required {
+      background-color: sandybrown;
+    }
+    input[placeholder~="name"] {
+      background-color: palevioletred;
+    }
+    button:focus {
+      background-color: aquamarine;
+    }
+    input:hover {
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <form>
+      <input type="text" placeholder="First name" />
+      <input type="text" placeholder="Last name" />
+      <input type="password" required placeholder="password" />
+      <button>login</button>
+    </form>
+  </body>
+</html>
